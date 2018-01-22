@@ -1,5 +1,5 @@
 # ROS odom spin  
-Irobot Create 2, make accurate spins using ROS odometry, and multiple tasks, can be building blocks for complex tasks in irobot navigation, etc.
+Irobot Create 2, make accurate spins using ROS odometry and multiple tasks, can be used for building blocks for complex tasks in irobot navigation, etc.
 
 
 ## Dependencies
