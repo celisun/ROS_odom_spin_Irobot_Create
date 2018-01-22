@@ -1,6 +1,6 @@
 # A simple task of irobot create 2 for: 
 # go straight forward, if obstacle detected at front (according to irobot bumper senosr), 
-# make a 180 deg turn.
+# make a 180 deg turn, so on and so forth
 
 #!/usr/bin/env python
 
