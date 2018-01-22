@@ -1,4 +1,4 @@
-# ROS odom spin for irobot create2
+# ROS odom spin  
 Irobot Create2, control accurate spin using odometry messages in ROS, and multiple tasks
 
 ## Dependencies
