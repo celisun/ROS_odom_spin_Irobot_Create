@@ -42,35 +42,35 @@ def callback(msg):
 	# If in turn state, 
         # or should get ready for turns when obstacle detected at front	
 	if flag or msg.is_light_center_left or msg.is_light_center_right \
-		or msg.is_light_left or msg.is_light_front_left \
-		or msg.is_light_front_right or msg.is_light_right:
+		or msg.is_light_front_left or msg.is_light_front_right\
+		or msg.is_left_pressed or msg.is_right_pressed:
 
 		if not flag:         	 # not in turn state yet, turn on turn state, first time setting
 			print "danger deteced!.."
 			yaw_start = yaw
 			flag = True           # reverse flag 
 		else:  	 # if in turn state, calculate how much turn has been made
-			if yaw < yaw_start: 
-				yaw_total = yaw - yaw_start
-			elif yaw > yaw_start: 
+			if yaw > yaw_start: 
+				yaw_total = math.fabs(yaw -yaw_start)
+			elif yaw < yaw_start: 
 				yaw_total += yaw 
 
 		print yaw_start, yaw, yaw_total 
-		if yaw_total < math.pi:	          # turn  	
+		if yaw_total <= math.pi:	          # turn  	
 			print "I'm turning"
-			twist.angular.z = -0.5
+			twist.angular.z = 0.75
 	 		pub.publish(twist)   
 		else: 
 			print "finish turns"
-			twist.angular.z = 0.
+			twist.angular.z = 0.	 
 			pub.publish(twist)
-
 			flag = False             # reverse the flag, finish turning, 
-			yaw_start, yaw_totoal = 0.        # clear preivous turn history
+			yaw_start = 0.           # clear preivous turn history
+			yaw_total = 0.
 	
 	else:
 		print "go forward"
-		twist.linear.x = 0.075
+		twist.linear.x = 0.08
 		twist.angular.z = 0.
 		pub.publish(twist)	 # go forward
 
@@ -84,6 +84,5 @@ sub = rospy.Subscriber("bumper", Bumper, callback)   # subscribe bumper for obst
 while not rospy.is_shutdown():
 
 	rate.sleep()
-
 
 
