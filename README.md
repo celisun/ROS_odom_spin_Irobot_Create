@@ -1,8 +1,9 @@
 # ROS odom spin  
 Irobot Create 2, make accurate spins using ROS odometry and multiple tasks, can be used as the building block for various complex tasks in irobot navigation.
 
-Autonomous Robotics Lab 
-@ Jan, 2018 @ Brandeis University @ Celi Sun 
+**[Autonomous Robotics Lab](http://campusrover.org.s3-website-us-west-2.amazonaws.com)** 
+
+@ Celi Sun  @ Nov, 2017  @ Brandeis University
 
 
 
