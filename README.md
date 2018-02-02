@@ -1,5 +1,5 @@
 # ROS odom spin  
-Irobot Create 2, make accurate spins using ROS odometry messages, can be used as the building block for various complex tasks in irobot navigation.
+Use ROS odometry messages to control accurate turns on Irobot Create, can be used as the building block for robot navigation. 
 
 **[Autonomous Robotics Lab](http://campusrover.org.s3-website-us-west-2.amazonaws.com)** 
 
