@@ -1,5 +1,5 @@
 # ROS odom spin  
-Use ROS odometry messages to control accurate turns on Irobot Create, can be used as the building block for robot navigation. 
+Use ROS odometry messages to control accurate turns on Irobot Create, can be used as the building block for robot navigation. This package also contains a node which converts from odometry in quaternion to euler form.
 
 **[Autonomous Robotics Lab](http://campusrover.org.s3-website-us-west-2.amazonaws.com)** 
 
