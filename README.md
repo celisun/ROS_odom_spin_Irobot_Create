@@ -1,5 +1,5 @@
 # ROS odom spin  
-Use ROS odometry messages to control accurate turns e.g. 180 deg on Irobot Create, can be used as the building block for navigations of various vehicles. 
+Use ROS odometry messages to control accurate turns e.g. 180 deg on Irobot Create, can be used as a building block for navigations of autnomous vehicles. 
 
 
 **[Autonomous Robotics Lab](http://campusrover.org.s3-website-us-west-2.amazonaws.com)** 
