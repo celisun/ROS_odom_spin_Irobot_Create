@@ -6,7 +6,7 @@ Use ROS odometry messages to control accurate turns e.g. 180 deg on Irobot Creat
 
 @ Celi Sun  @ Nov, 2017  @ Brandeis University
 
-Running scripts in the package manipulates irobot to **go forward and turn 180 deg** if any obstacle detected at front (by bumper IR rays on irbot)
+Running scripts in the package manipulates irobot to **go forward and turn 180 deg** if any obstacle detected at front (by bumper IR sensors on irbot)
 
 This package also contains **a node that converts odometry from quaternion to euler form**, and publish to topic /odom_euler. 
 
